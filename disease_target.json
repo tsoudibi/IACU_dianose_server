@@ -1,0 +1,1079 @@
+{
+  "data": [
+    {
+      "id": "TB23",
+      "type": "acupoints",
+      "attributes": {
+        "name": "絲竹空",
+        "name_en": "Sizhukong",
+        "area": "head",
+        "alt_name": [
+          "目髎"
+        ],
+        "alt_name_en": [
+          "Neh"
+        ],
+        "symptom": [
+          "面癱",
+          "眼瞼瞤動"
+        ],
+        "symptom_en": [
+          "Facial Paralysis",
+          "Eyelid Movement"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_TB23"
+            },
+            {
+              "type": "points",
+              "id": "L_TB23"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "EX-HN3",
+      "type": "acupoints",
+      "attributes": {
+        "name": "印堂",
+        "name_en": "Yintang",
+        "area": "head",
+        "alt_name": [
+          "曲眉",
+          "光明"
+        ],
+        "alt_name_en": [
+          "Kyokumayu",
+          "Guangmíng"
+        ],
+        "symptom": [
+          "前額痛",
+          "眩暈",
+          "鼻炎",
+          "鼻衄",
+          "感冒發熱",
+          "高血壓",
+          "失眠",
+          "嘔吐",
+          "產後血暈不語",
+          "子癇",
+          "小兒驚厥"
+        ],
+        "symptom_en": [
+          "Forehead Pain",
+          "Dizziness",
+          "Rhinitis",
+          "Epistaxis",
+          "Cold/Fever",
+          "Hypertension",
+          "Insomnia",
+          "Vomiting",
+          "Postpartum Bleeding",
+          "Eclampsia",
+          "Pediatric Convulsion"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "EX-HN3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "EX-HN4",
+      "type": "acupoints",
+      "attributes": {
+        "name": "魚腰",
+        "name_en": "Yuyao",
+        "area": "head",
+        "alt_name": [
+          "光明",
+          "眉中"
+        ],
+        "alt_name_en": [
+          "Guangming",
+          "Meizhong"
+        ],
+        "symptom": [
+          "結膜炎",
+          "眼瞼緣炎",
+          "眼肌麻痺",
+          "眼瞼下垂",
+          "目赤腫痛",
+          "面神經麻痺",
+          "近視",
+		  "頭痛",
+          "三叉神經痛",
+          "眶上神經痛",
+          "眼瞼瞤動",
+          "室上性陣發性心動過速"
+        ],
+        "symptom_en": [
+          "Conjunctivitis",
+          "Blepharitis",
+          "Ophthalmoplegia",
+          "Eyelid Ptosis",
+          "Eye Redness/Throat",
+          "Facial Paralysis",
+          "Myopia",
+          "Trigeminal Nerve (1st branch) Pain",
+          "Supraorbital Neuralgia",
+          "Eyelid Movement",
+          "Supraventricular Paroxysmal Tachycardia"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_EX-HN4"
+            },
+            {
+              "type": "points",
+              "id": "L_EX-HN4"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "EX-HN7",
+      "type": "acupoints",
+      "attributes": {
+        "name": "球後",
+        "name_en": "Qiuhou",
+        "area": "head",
+        "alt_name": [
+          "光明",
+          "眉中"
+        ],
+        "alt_name_en": [
+          "Guangmíng",
+          "Meizhong"
+        ],
+        "symptom": [
+          "視神經炎",
+          "視神經萎縮",
+          "近視",
+          "青光眼",
+          "視網膜動",
+          "靜脈阻塞",
+          "視網膜色素變性",
+          "中心性漿液性視網膜炎",
+          "色覺異常"
+        ],
+        "symptom_en": [
+          "Optic Neuritis",
+          "Optic Nerve Atrophy (ONA)",
+          "Myopia",
+          "Glaucoma",
+          "Retinal Movement",
+          "Retinal Vein Occlusion",
+          "Retinitis Pigmentosa (RP)",
+          "Central Serous Retinopathy (CSR)",
+          "Color Blindness"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_EX-HN7"
+            },
+            {
+              "type": "points",
+              "id": "L_EX-HN7"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "EX-HN8",
+      "type": "acupoints",
+      "attributes": {
+        "name": "上迎香",
+        "name_en": "Qiuhou",
+        "area": "head",
+        "alt_name": [
+          "鼻通",
+          "穿鼻"
+        ],
+        "alt_name_en": [
+          "Bitong",
+          "Chuanbí"
+        ],
+        "symptom": [
+          "鼻炎鼻塞",
+          "鼻部癤瘡",
+          "過敏性鼻炎",
+          "肥大性鼻炎",
+          "萎縮性鼻炎",
+          "鼻旁竇炎"
+        ],
+        "symptom_en": [
+          "Rhinitis/Nasal Congestion",
+          "Nasal Boils",
+          "Allergic Rhinitis",
+          "Hypertrophic Rhinitis",
+          "Atrophic Rhinitis",
+          "Sinusitis"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_EX-HN8"
+            },
+            {
+              "type": "points",
+              "id": "L_EX-HN8"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "EX-HN17",
+      "type": "acupoints",
+      "attributes": {
+        "name": "俠承漿",
+        "name_en": "Qiuhou",
+        "area": "head",
+        "alt_name": [
+          "下地倉",
+          "痛關",
+          "頦髎"
+        ],
+        "alt_name_en": [
+          "Shitajikura",
+          "Tongguan",
+          "Hailiao"
+        ],
+        "symptom": [
+          "三叉神經痛",
+          "牙痛",
+          "面頰浮腫",
+          "齒齦潰爛",
+          "面神經麻痺",
+          "面肌痙攣",
+          "黃疸"
+        ],
+        "symptom_en": [
+          "Trigeminal Neuralgia (TN)",
+          "Toothache",
+          "Cheek Swelling",
+          "Mouth Ulcer",
+          "Facial Nerve Paralysis",
+          "Hemifacial Spasm (HFS)",
+          "Jaundice"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_EX-HN17"
+            },
+            {
+              "type": "points",
+              "id": "L_EX-HN17"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "BL1",
+      "type": "acupoints",
+      "attributes": {
+        "name": "睛明",
+        "name_en": "Jingming",
+        "area": "head",
+        "alt_name": [
+          "精明",
+          "淚孔",
+          "淚空",
+          "目內眥",
+          "內眥外"
+        ],
+        "alt_name_en": [
+          "Jingmíng",
+          "Leikong",
+          "Leikong",
+          "Muneizi",
+          "Neiziwai"
+        ],
+        "symptom": [
+          "角膜炎",
+          "視網膜炎",
+          "夜盲",
+          "視神經炎",
+          "視神經萎縮",
+          "青光眼",
+          "早期輕度白內障",
+          "角膜白斑",
+          "翼狀胬肉",
+          "癔症性弱視",
+          "視網膜動脈阻塞",
+          "視網膜色素變性",
+          "結膜炎",
+          "淚腺炎",
+          "淚囊炎",
+          "沙眼",
+          "電光性眼炎",
+          "斜視",
+          "面神經麻痺",
+          "眼輪匝肌痙攣",
+          "心動過速"
+        ],
+        "symptom_en": [
+          "Keratitis",
+          "Retinitis Pigmentosa (RP)",
+          "Nyctalopia ",
+          "Optic Neuritis",
+          "Leber Optic Atrophy (LHON)",
+          "Glaucoma",
+          "Cataracts",
+          "Corneal Leukoplakia",
+          "Pterygium",
+          "Amblyopia",
+          "Central Retinal Artery Occlusion (CRAO)",
+          "Retinitis Pigmentosa (RP)",
+          "Conjunctivitis",
+          "Rheumatoid Arthritis",
+          "Dacryocystitis",
+          "Trachoma",
+          "Ophthalmia",
+          "Strabismus",
+          "Facial Nerve Paralysis",
+          "Hemifacial Spasm (HFS)",
+          "Tachycardia"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_BL1"
+            },
+            {
+              "type": "points",
+              "id": "L_BL1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "BL2",
+      "type": "acupoints",
+      "attributes": {
+        "name": "攢竹",
+        "name_en": "Cuanzhu",
+        "area": "head",
+        "alt_name": [
+          "眉頭",
+          "眉本",
+          "明光",
+          "始光",
+          "夜光",
+          "員柱"
+        ],
+        "alt_name_en": [
+          "Meitou",
+          "Meiben",
+          "Mingguang",
+          "Shiguang",
+          "Yeguang",
+          "Yuanzhu"
+        ],
+        "symptom": [
+		  "頭痛",
+          "前額痛",
+          "肌緊張性頭痛",
+          "結膜炎",
+          "角膜炎",
+          "淚囊炎",
+          "近視",
+          "視神經炎",
+          "視神經萎縮",
+          "面神經麻痺",
+          "玻璃體混濁",
+          "羞明",
+          "眼瞼下垂",
+          "麥粒腫",
+          "失眠",
+          "鼻塞",
+          "肛門部術後疼痛"
+        ],
+        "symptom_en": [
+          "Forehead Pain",
+          "Tension Headache",
+          "Conjunctivitis",
+          "Keratitis",
+          "Dacryocystitis",
+          "Myopia",
+          "Optic Neuritis",
+          "Optic Nerve Atrophy (ONA)",
+          "Facial Nerve Paralysis",
+          "Vitreous Opacities",
+          "Photophobia",
+          "Eyelid Ptosis",
+          "Stye",
+          "Insomnia",
+          "Nasal Congestion",
+          "Postoperative Anal Pain"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_BL2"
+            },
+            {
+              "type": "points",
+              "id": "L_BL2"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "GB1",
+      "type": "acupoints",
+      "attributes": {
+        "name": "瞳子髎",
+        "name_en": "Tongziliao",
+        "area": "head",
+        "alt_name": [
+          "太陽",
+          "前關",
+          "後曲",
+          "魚尾"
+        ],
+        "alt_name_en": [
+          "Taiyang",
+          "Qianguan",
+          "Houqu",
+          "Yuwei"
+        ],
+        "symptom": [
+          "結膜炎",
+          "角膜炎",
+          "視網膜炎",
+          "夜盲",
+          "視神經萎縮",
+          "近視",
+          "面癱",
+          "面肌痙攣",
+		  "頭痛",
+          "三叉神經痛"
+        ],
+        "symptom_en": [
+          "Conjunctivitis",
+          "Keratitis",
+          "Retinitis",
+          "Nyctalopia",
+          "Optic Nerve Atrophy (ONA)",
+          "Myopia",
+          "Facial Nerve Paralysis",
+          "Hemifacial Spasm (HFS)",
+          "Trigeminal Neuralgia (TN)"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_GB1"
+            },
+            {
+              "type": "points",
+              "id": "L_GB1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "GB14",
+      "type": "acupoints",
+      "attributes": {
+        "name": "陽白",
+        "name_en": "Yangbai",
+        "area": "head",
+        "alt_name": [
+          "客主人"
+        ],
+        "alt_name_en": [
+          "Kezhuren"
+        ],
+        "symptom": [
+          "面癱",
+          "三叉神經痛",
+		  "頭痛",
+          "眶上神經痛",
+          "眼瞼下垂"
+        ],
+        "symptom_en": [
+          "Facial Nerve Paralysis",
+          "Trigeminal Neuralgia (TN)",
+          "Supraorbital Neuralgia",
+          "Eyelid Ptosis"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_GB14"
+            },
+            {
+              "type": "points",
+              "id": "L_GB14"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ST1",
+      "type": "acupoints",
+      "attributes": {
+        "name": "承泣",
+        "name_en": "Chengqi",
+        "area": "head",
+        "alt_name": [],
+        "alt_name_en": [],
+        "symptom": [
+          "角膜炎",
+          "夜盲",
+          "近視",
+          "青光眼",
+          "視神經萎縮",
+          "眼輪匝肌痙攣",
+          "面神經麻痺"
+        ],
+        "symptom_en": [
+          "Keratitis",
+          "Nyctalopia",
+          "Myopia",
+          "Glaucoma",
+          "Optic Nerve Atrophy (ONA)",
+          "Orbicularis Oculi Spasm",
+          "Facial Nerve Paralysis"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_ST1"
+            },
+            {
+              "type": "points",
+              "id": "L_ST1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ST2",
+      "type": "acupoints",
+      "attributes": {
+        "name": "四白",
+        "name_en": "Sibai",
+        "area": "head",
+        "alt_name": [],
+        "alt_name_en": [],
+        "symptom": [
+          "面神經麻痺",
+          "三叉神經痛",
+          "角膜炎",
+          "鼻炎膽管蛔蟲症"
+        ],
+        "symptom_en": [
+          "Facial Nerve Paralysis",
+          "Trigeminal Neuralgia (TN)",
+          "Keratitis",
+          "Ascariasis"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_ST2"
+            },
+            {
+              "type": "points",
+              "id": "L_ST2"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ST3",
+      "type": "acupoints",
+      "attributes": {
+        "name": "巨髎",
+        "name_en": "Juliao",
+        "area": "head",
+        "alt_name": [],
+        "alt_name_en": [],
+        "symptom": [
+          "鼻炎",
+          "鼻塞",
+          "三叉神經痛",
+          "面神經麻痺"
+        ],
+        "symptom_en": [
+          "Rhinitis",
+          "Nasal Congestion",
+          "Trigeminal Neuralgia (TN)",
+          "Facial Nerve Paralysis"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_ST3"
+            },
+            {
+              "type": "points",
+              "id": "L_ST3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ST4",
+      "type": "acupoints",
+      "attributes": {
+        "name": "地倉",
+        "name_en": "Dicang",
+        "area": "head",
+        "alt_name": [
+          "胃維"
+        ],
+        "alt_name_en": [
+          "Weiwei"
+        ],
+        "symptom": [
+          "面神經麻痺",
+          "三叉神經痛",
+          "鵝口瘡"
+        ],
+        "symptom_en": [
+          "Facial Nerve Paralysis",
+          "Trigeminal Neuralgia (TN)",
+          "Oral Candidiasis"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_ST4"
+            },
+            {
+              "type": "points",
+              "id": "L_ST4"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "SI18",
+      "type": "acupoints",
+      "attributes": {
+        "name": "顴髎",
+        "name_en": "Quanliao",
+        "area": "head",
+        "alt_name": [
+          "權髎",
+          "兌骨"
+        ],
+        "alt_name_en": [
+          "Quanliao",
+          "Duigu"
+        ],
+        "symptom": [
+          "三叉神經痛",
+          "面神經麻痺",
+          "面肌痙攣"
+        ],
+        "symptom_en": [
+          "Trigeminal Neuralgia (TN)",
+          "Facial Nerve Paralysis",
+          "Hemifacial Spasm (HFS)"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_SI18"
+            },
+            {
+              "type": "points",
+              "id": "L_SI18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "DU26",
+      "type": "acupoints",
+      "attributes": {
+        "name": "水溝",
+        "name_en": "Shuigou",
+        "area": "head",
+        "alt_name": [
+          "人中"
+        ],
+        "alt_name_en": [
+          "Renzhong"
+        ],
+        "symptom": [
+          "暈厥",
+          "休克",
+          "呃逆",
+          "遺尿",
+          "尿瀦留",
+          "破傷風",
+          "面神經麻痺",
+          "癔病",
+          "精神分裂症",
+          "舞蹈病",
+          "抽搐",
+          "面肌痙攣",
+          "暈車",
+          "暈船",
+          "暈機",
+          "急性腰扭傷"
+        ],
+        "symptom_en": [
+          "Syncope",
+          "Shock",
+          "Hiccup",
+          "Enuresis",
+          "Ischuria",
+          "Tetanus",
+          "Facial Nerve Paralysis",
+          "Hysteria",
+          "Schizophrenia",
+          "Chorea",
+          "Cramp",
+          "Facial Nerve Paralysi",
+          "Kinetosis",
+          "Seasickness",
+          "Airsickness",
+          "Low Back Pain (LBP)"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "DU26"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "LI19",
+      "type": "acupoints",
+      "attributes": {
+        "name": "禾髎",
+        "name_en": "Heliao",
+        "area": "head",
+        "alt_name": [
+          "口禾髎"
+        ],
+        "alt_name_en": [
+          "Kouheliao"
+        ],
+        "symptom": [
+          "鼻炎",
+          "面神經麻痺"
+        ],
+        "symptom_en": [
+          "Rhinitis",
+          "Facial Nerve Paralysis"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_LI19"
+            },
+            {
+              "type": "points",
+              "id": "L_LI19"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "LI20",
+      "type": "acupoints",
+      "attributes": {
+        "name": "迎香",
+        "name_en": "Yingxiang",
+        "area": "head",
+        "alt_name": [
+          "衝陽"
+        ],
+        "alt_name_en": [
+          "Chongyang"
+        ],
+        "symptom": [
+          "鼻竇炎",
+          "鼻炎",
+          "酒糟鼻",
+          "面神經麻痹",
+          "面肌痙攣",
+          "三叉神經痛",
+          "便秘",
+          "膽道蛔虫症",
+          "痛經"
+        ],
+        "symptom_en": [
+          "Sinusitis",
+          "Rhinitis",
+          "Rosacea",
+          "Facial Nerve Paralysis",
+          "Hemifacial Spasm (HFS)",
+          "Trigeminal Neuralgia (TN)",
+          "Constipation",
+          "Ascariasis",
+          "Dysmenorrhea"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "R_LI20"
+            },
+            {
+              "type": "points",
+              "id": "L_LI20"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "RN24",
+      "type": "acupoints",
+      "attributes": {
+        "name": "承漿",
+        "name_en": "Chengjiang",
+        "area": "head",
+        "alt_name": [
+          "天池",
+          "懸漿"
+        ],
+        "alt_name_en": [
+          "Tianchí",
+          "Xuanjiang"
+        ],
+        "symptom": [
+          "面癱",
+          "口腔潰瘍",
+          "流涎"
+        ],
+        "symptom_en": [
+          "Facial Nerve Paralysis",
+          "Aphthous Stomatitis",
+          "Hypersalivation"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "RN24"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "LU6",
+      "type": "acupoints",
+      "attributes": {
+        "name": "孔最",
+        "name_en": "Kongzui",
+        "area": "arm",
+        "alt_name": [],
+        "alt_name_en": ["Collection Hole"],
+        "symptom": [
+          "咳嗽",
+          "喘息",
+          "哮喘",
+          "喉嚨痛"
+        ],
+        "symptom_en": [
+          "Cough",
+          "Wheezing",
+          "Asthma",
+          "Sore throat"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "LU6"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "P6",
+      "type": "acupoints",
+      "attributes": {
+        "name": "內關",
+        "name_en": "Neiguan",
+        "area": "arm",
+        "alt_name": [],
+        "alt_name_en": [""],
+        "symptom": [
+          "噁心",
+          "不舒服的胃",
+          "運動疾病",
+          "腕管綜合症",
+          "頭痛"
+        ],
+        "symptom_en": [
+          "Nausea",
+          "Upset Stomach",
+          "Motion Sickness",
+          "Carpal Tunnel Syndrome",
+          "Headache"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "P6"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ST34",
+      "type": "acupoints",
+      "attributes": {
+        "name": "梁秋",
+        "name_en": "Liangqiu",
+        "area": "leg",
+        "alt_name": [],
+        "alt_name_en": ["Beam Hill"],
+        "symptom": [
+          "腫脹",
+          "急性胃痛",
+          "嘔吐",
+          "急性乳房疼痛"
+        ],
+        "symptom_en": [
+          "Swelling",
+          "Acute Stomach Pain",
+          "Vomiting",
+          "Acute Breast Pain"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "ST34"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "UB37",
+      "type": "acupoints",
+      "attributes": {
+        "name": "銀門",
+        "name_en": "Yinmen",
+        "area": "leg",
+        "alt_name": [],
+        "alt_name_en": ["Gate of Abundance"],
+        "symptom": [
+          "腰背疼痛",
+          "坐骨痛",
+          "局部腿筋",
+          "腿痛"
+        ],
+        "symptom_en": [
+          "Low Back Pain",
+          "Sciatic Pain",
+          "Local Hamstring",
+          "Leg Pain"
+        ]
+      },
+      "relationships": {
+        "points": {
+          "data": [
+            {
+              "type": "points",
+              "id": "UB37"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
