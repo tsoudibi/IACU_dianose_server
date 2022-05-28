@@ -1,0 +1,91 @@
+{
+	"variables": [],
+	"info": {
+		"name": "test_IACU",
+		"_postman_id": "32331f16-83f2-da20-b037-c89ac0afb522",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://192.168.0.36:3001/init/",
+			"request": {
+				"url": "http://192.168.0.36:3001/init/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"uid\":0,\n\t\"user_name\":\"大雞雞\",\n\t\"answer\":\"你好，我頭痛\"\n}"
+				},
+				"description": "init for 大雞雞\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.0.36:3001/ask/",
+			"request": {
+				"url": "http://192.168.0.36:3001/ask/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"uid\":0,\n\t\"user_name\":\"大雞雞\",\n\t\"answer\":\"你好，我頭痛\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.0.36:3001/init/",
+			"request": {
+				"url": "http://192.168.0.36:3001/init/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"uid\":1,\n\t\"user_name\":\"大9雞\",\n\t\"answer\":\"你好，我頭痛\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.0.36:3001/ask/",
+			"request": {
+				"url": "http://192.168.0.36:3001/ask/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"uid\":1,\n\t\"user_name\":\"大3雞\",\n\t\"answer\":\"你，我發燒\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
