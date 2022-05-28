@@ -62,12 +62,12 @@ def post2():
     # do the inquiry
     response,cont = MB.inquiry(UID, quest['answer'])
     print(response)
-    
+
     # save response in JSON
     UDB.save_response(UID, response)
     
     # uid, question, target[id], continue
-    key = ["uid", "question", "acu_points", "continue"]
+    key = ["uid", "response", "acu_points", "continue"]
     value = [12,response, MB.symptoms, cont]
     dic = dict(zip(key, value))
     return jsonify(dic)

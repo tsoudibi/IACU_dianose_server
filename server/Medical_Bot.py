@@ -75,7 +75,6 @@ class Medical_Bot():
     # output: 3 most possible disease
     def query_disease(self, queries):
         # encode quries
-        print(len(queries))
         query_embeddings = self.embedder.encode(queries)
 
         results = []
@@ -105,7 +104,7 @@ class Medical_Bot():
 
             # sort by distence
             results = sorted(score_dist.items(), key=lambda x:x[1], reverse=True)
-        print("======================")
+        # print("======================")
         print("Query:", queries)
         for name, distance in results[0:3]:
             print(name, "(Score: %.4f)" % (distance))
@@ -170,7 +169,7 @@ class Medical_Bot():
             if word ==0 and item[1]!='NO': # 不採用落單的副詞
                 result.append(item)
         for item in result:
-            print(item)
+            # print(item)
             result_list.append(item[0])
 
         # filtering MONPA result
@@ -212,10 +211,8 @@ class Medical_Bot():
             result_list.append(valid)
             target_list.append(highest_target)
             valid_rate.append(round(valid_count/271,2))
-            if not valid:
-                print(query, 'is invalid')
-            else:
-                print(query, 'is valid')
+        print(MONPA_results)
+        print(result_list)
         # filter out invalid symptoms
         answer = []
         for index, query_ in enumerate(MONPA_results):
