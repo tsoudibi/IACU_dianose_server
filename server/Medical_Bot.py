@@ -11,6 +11,7 @@ from tqdm import tqdm
 import ast
 import pandas as pd
 import monpa
+from users_DB import USERS_DB
 patterns=['Na','Nb','Nc','Ncd',
           'NO',
           'VA','VAC','VB','VC','VD','VE','VF','VG','VH','VHC','VI','VJ','VL']
@@ -22,8 +23,25 @@ v_patterns=['VA','VAC','VB','VC','VD','VE','VF','VG','VH','VHC','VI','VJ','VL']
 class Medical_Bot():
     # input: user input
     # output: response string, continue
-    def inquiry(self, input_symptoms_origin):
+    def inquiry(self, UID, input_symptoms_origin):
+        self.UID = UID
+        # load checkpoint
+        self.symptoms,self.acupoints,self.candidate_dis = self.user_DB.load_checkpoint(self.UID)
+
+        # do the MONPA
         input_symptoms = self.MONPA(input_symptoms_origin)
+
+        # put the input_symptoms into symptoms list
+        self.symptoms = self.symptoms + input_symptoms
+        # query_disease
+        self.candidate_dis = self.query_disease(self.symptoms)
+
+        # save checkpoint
+        self.user_DB.save_checkpoint(self.UID,
+                                    self.symptoms,
+                                    self.acupoints,
+                                    self.candidate_dis)
+
         # check stop word
         for stop_word in ["不", "沒", "否"]:
             if stop_word in input_symptoms_origin:
@@ -35,31 +53,22 @@ class Medical_Bot():
                     response = '好的，你真健康'
                     return response, False
             
-        if input_symptoms in self.symptoms:
-            # the symptoms has told before
-            response = '你有跟我提到過這個症狀了喔\n你還有其他症狀嗎？'
+        
+        if len(self.candidate_dis[0]) == 0:
+            # if there are no disease found
+            response = '完全找不到對應的疾病喔'
+            # clear acupoints list
+            self.acupoints.clear()
+            return response, False
+        elif self.candidate_dis[0][1] <= len(self.symptoms) -2 :
+            # last input symptom useless
+            response = '資料庫中沒有完全符合這些特徵的疾病。\n不過目前你看起來最像得了'+self.candidate_dis[0][0]
             return response, True
         else:
-            # put the input_symptoms into symptoms list
-            self.symptoms = self.symptoms + input_symptoms
-            # query_disease
-            self.candidate_dis = self.query_disease(self.symptoms)
-            
-            if self.candidate_dis[0][1] <= 0:
-                # if there are no disease found
-                response = '完全找不到對應的疾病喔'
-                # clear acupoints list
-                self.acupoints.clear()
-                return response, False
-            elif self.candidate_dis[0][1] <= len(self.symptoms) -2 :
-                # last input symptom useless
-                response = '資料庫中沒有完全符合這些特徵的疾病。\n不過目前你看起來最像得了'+self.candidate_dis[0][0]
-                return response, True
-            else:
-                # disease found
-                # response = '你看起來像有'+self.candidate_dis[0][0]+'\n分數為'+str(round(self.candidate_dis[0][1],3))+'/'+str(len(self.symptoms))+'\n請問你還有其他症狀嗎？'
-                response = '你看起來像有'+self.candidate_dis[0][0]+'\n' +'請問你還有其他症狀嗎？'
-                return response, True
+            # disease found
+            # response = '你看起來像有'+self.candidate_dis[0][0]+'\n分數為'+str(round(self.candidate_dis[0][1],3))+'/'+str(len(self.symptoms))+'\n請問你還有其他症狀嗎？'
+            response = '你看起來像有'+self.candidate_dis[0][0]+'\n' +'請問你還有其他症狀嗎？'
+            return response, True
 
 
     # input: queried symptoms
@@ -68,7 +77,8 @@ class Medical_Bot():
         # encode quries
         print(len(queries))
         query_embeddings = self.embedder.encode(queries)
-        
+
+        results = []
         
         # create empty disease dictionary
         score_dist = {} 
@@ -246,9 +256,11 @@ class Medical_Bot():
         self.embedder = SentenceTransformer('bert-base-chinese')
         print('done!')
             
-    def __init__(self):        
+    def __init__(self, user_DB):        
         self.load_DB()
         self.load_embedder()
+
+        self.user_DB = user_DB
         
         # query settings
         self.query_return_number = 3

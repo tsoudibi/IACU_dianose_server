@@ -4,6 +4,7 @@ from flask import Flask, request
 from flask import jsonify
 
 from Medical_Bot import Medical_Bot
+from users_DB import USERS_DB
 
 
 # get sentence from web in json format
@@ -12,17 +13,30 @@ from Medical_Bot import Medical_Bot
 app = Flask(__name__)
 
 # enable medical bot
-MB = Medical_Bot()
+UDB = USERS_DB()
+MB = Medical_Bot(UDB)
 
 # return question + uid
 @app.route('/init/', methods=['POST'])
 def post():
     quest = request.json
+    UID  = quest['uid']
+    USER_NAME = quest['user_name']
+
+    # check if this user is new and add to users DB
+    UDB.new_user(UID,USER_NAME)
+
+    # clear checkpoints
     MB.reset_inquiry()
-    key = ["uid", "question"]
-	# value = [uid, "你好%s,請問你哪裡不舒服呢？" % (name['name'])]
-    value = [000, "哈摟，你有甚麼症狀呢？"]
+    UDB.reset_checkpoint(UID)
+
+    key = ["UID", "question"]
+    value = [UID, "哈摟" + USER_NAME + "，你有甚麼症狀呢？"]
     dic = dict(zip(key, value))
+
+    # save response in JSON
+    UDB.save_response(UID, dic['question'])
+
     return jsonify(dic)
 
 
@@ -31,6 +45,10 @@ def post():
 def post2():
     quest = request.json
     print(quest)
+    UID  = quest['uid']
+
+    # save answer in JSON
+    UDB.save_answer(UID, quest['answer'])
     
     
     # if cont = true:
@@ -41,8 +59,12 @@ def post2():
         # else if disease = ["EX-HN3"] 
             # means find this acu point
             
-    response,cont = MB.inquiry(quest['answer'])
+    # do the inquiry
+    response,cont = MB.inquiry(UID, quest['answer'])
     print(response)
+    
+    # save response in JSON
+    UDB.save_response(UID, response)
     
     # uid, question, target[id], continue
     key = ["uid", "question", "acu_points", "continue"]

@@ -1,0 +1,78 @@
+{
+    "user_list": [
+        {
+            "UID": -1,
+            "USER_NAME": "None",
+            "answers_logs": [],
+            "respones_logs": [],
+            "checkpoints": {
+                "symptoms": [],
+                "acupoints": [],
+                "candidate_dis": []
+            }
+        },
+        {
+            "UID": 0,
+            "USER_NAME": "大雞雞",
+            "answers_logs": [
+                "你好，我頭痛"
+            ],
+            "respones_logs": [
+                "哈摟大雞雞，你有甚麼症狀呢？",
+                "你看起來像有角膜結膜炎\n請問你還有其他症狀嗎？"
+            ],
+            "checkpoints": {
+                "symptoms": [
+                    "頭痛",
+                    "好"
+                ],
+                "acupoints": [],
+                "candidate_dis": [
+                    [
+                        "角膜結膜炎",
+                        1.8779773088123226
+                    ],
+                    [
+                        "頭痛",
+                        1.195238095234431
+                    ],
+                    [
+                        "青光眼",
+                        1.1761904761868704
+                    ]
+                ]
+            }
+        },
+        {
+            "UID": 1,
+            "USER_NAME": "大9雞",
+            "answers_logs": [
+                "你，我發燒"
+            ],
+            "respones_logs": [
+                "哈摟大9雞，你有甚麼症狀呢？",
+                "你看起來像有上牙痛\n請問你還有其他症狀嗎？"
+            ],
+            "checkpoints": {
+                "symptoms": [
+                    "發燒"
+                ],
+                "acupoints": [],
+                "candidate_dis": [
+                    [
+                        "上牙痛",
+                        1.1619047619044507
+                    ],
+                    [
+                        "小兒熱痙攣",
+                        1.1619047619044407
+                    ],
+                    [
+                        "鼻竇炎",
+                        1.0620711958640419
+                    ]
+                ]
+            }
+        }
+    ]
+}
