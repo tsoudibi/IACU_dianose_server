@@ -13,7 +13,7 @@
 ## /init/
 * for every dianose, `/init/` request should be done before `/ask/`.
 * request METHOD: POST
-* request content type: JSON
+* request content type: Form
 request formate:
 ```
 {
@@ -33,7 +33,7 @@ response formate:
 ## /ask/
 * for every dianose, `/init/` request should be done before `/ask/`.
 * request METHOD: POST
-* request content type: JSON
+* request content type: Form
 request formate:
 ```
 {
