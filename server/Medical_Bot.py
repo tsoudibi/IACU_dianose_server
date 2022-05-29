@@ -43,15 +43,17 @@ class Medical_Bot():
                                     self.candidate_dis)
 
         # check stop word
-        for stop_word in ["不", "沒", "否"]:
+        for stop_word in ["不", "沒", "否", "無"]:
             if stop_word in input_symptoms_origin:
                 # if there are candidate
                 if len(self.candidate_dis) > 0:
-                    response = '好的，你看起來像有'+self.candidate_dis[0][0]+'\n分數為'+str(round(self.candidate_dis[0][1],3))+'/'+str(len(self.symptoms))
+                    # response = '好的，你看起來像有'+self.candidate_dis[0][0]+'\n分數為'+str(round(self.candidate_dis[0][1],3))+'/'+str(len(self.symptoms))
+                    response = '好的，你看起來像有'+self.candidate_dis[0][0]+'後續再為您推薦適合按的穴道~'
                     return response, False
                 else:
                     response = '好的，你真健康'
                     return response, False
+        
             
         
         if len(self.candidate_dis[0]) == 0:

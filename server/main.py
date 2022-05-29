@@ -1,5 +1,6 @@
 #-*- encoding: UTF-8 -*-
 print('starting server...')
+import re
 from flask import Flask, request
 from flask import jsonify
 
@@ -20,7 +21,7 @@ MB = Medical_Bot(UDB)
 @app.route('/init/', methods=['POST'])
 def post():
     # quest = request.json
-    UID  = request.form["uid"]
+    UID = request.form["uid"]
     USER_NAME = request.form["user_name"]
 
     # check if this user is new and add to users DB
@@ -30,13 +31,13 @@ def post():
     MB.reset_inquiry()
     UDB.reset_checkpoint(UID)
 
-    key = ["UID", "question"]
-    value = [UID, "哈摟" + USER_NAME + "，你有甚麼症狀呢？"]
+    key = ["uid", "question"]
+    value = [UID, "哈囉" + USER_NAME + "，你有什麼症狀呢？"]
     dic = dict(zip(key, value))
 
     # save response in JSON
     UDB.save_response(UID, dic['question'])
-
+    print(dic, jsonify(dic))
     return jsonify(dic)
 
 
@@ -44,10 +45,10 @@ def post():
 @app.route('/ask/', methods=['POST'])
 def post2():
     # quest = request.json
-    # print(quest)
-    UID  = request.form["uid"]
+    UID = request.form['uid']
 
     # save answer in JSON
+    # print(request.form["answer"])
     UDB.save_answer(UID, request.form["answer"])
     
     
@@ -68,8 +69,9 @@ def post2():
     
     # uid, question, target[id], continue
     key = ["uid", "response", "acu_points", "continue"]
-    value = [12,response, MB.symptoms, cont]
+    value = [UID, response, MB.symptoms, cont]
     dic = dict(zip(key, value))
+    print(dic)
     return jsonify(dic)
 
 @app.route('/', methods=['POST'])
