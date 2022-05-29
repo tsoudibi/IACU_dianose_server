@@ -29,3 +29,27 @@ response formate:
     "question":"hello"
 }
 ```
+
+## /ask/
+* request METHOD: POST
+* request content type: JSON
+request formate:
+```
+{
+    "uid":0,
+    "answer":"I have hadache"
+}
+```
+* response content type: JSON
+response formate:
+```
+{
+    "UID":0,
+    "response":"I am a string", 
+    "acu_points":[
+        "acu1",
+        "acu2"
+    ], 
+    "continue": True
+}
+```
