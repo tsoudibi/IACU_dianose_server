@@ -19,9 +19,9 @@ MB = Medical_Bot(UDB)
 # return question + uid
 @app.route('/init/', methods=['POST'])
 def post():
-    quest = request.json
-    UID  = quest['uid']
-    USER_NAME = quest['user_name']
+    # quest = request.json
+    UID  = request.form["uid"]
+    USER_NAME = request.form["user_name"]
 
     # check if this user is new and add to users DB
     UDB.new_user(UID,USER_NAME)
@@ -43,12 +43,12 @@ def post():
 # return uid + question + target["id"] + continue
 @app.route('/ask/', methods=['POST'])
 def post2():
-    quest = request.json
-    print(quest)
-    UID  = quest['uid']
+    # quest = request.json
+    # print(quest)
+    UID  = request.form["uid"]
 
     # save answer in JSON
-    UDB.save_answer(UID, quest['answer'])
+    UDB.save_answer(UID, request.form["answer"])
     
     
     # if cont = true:
@@ -60,7 +60,7 @@ def post2():
             # means find this acu point
             
     # do the inquiry
-    response,cont = MB.inquiry(UID, quest['answer'])
+    response,cont = MB.inquiry(UID, request.form["answer"])
     print(response)
 
     # save response in JSON
