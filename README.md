@@ -13,7 +13,7 @@
 ## /init/
 * for every dianose, `/init/` request should be done before `/ask/`.
 * request METHOD: POST
-* request content type: JSON
+* request content type: Form
 request formate:
 ```
 {
@@ -25,7 +25,7 @@ request formate:
 response formate:
 ```
 {
-    "UID":0,
+    "uid":0,
     "question":"hello"
 }
 ```
@@ -33,7 +33,7 @@ response formate:
 ## /ask/
 * for every dianose, `/init/` request should be done before `/ask/`.
 * request METHOD: POST
-* request content type: JSON
+* request content type: Form
 request formate:
 ```
 {
@@ -45,7 +45,7 @@ request formate:
 response formate:
 ```
 {
-    "UID":0,
+    "uid":0,
     "response":"I am a string", 
     "acu_points":[
         "acu1",
