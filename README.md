@@ -25,7 +25,7 @@ request formate:
 response formate:
 ```
 {
-    "UID":0,
+    "uid":0,
     "question":"hello"
 }
 ```
@@ -45,7 +45,7 @@ request formate:
 response formate:
 ```
 {
-    "UID":0,
+    "uid":0,
     "response":"I am a string", 
     "acu_points":[
         "acu1",
