@@ -65,13 +65,13 @@ class Medical_Bot():
         
             
         
-        if self.target_disease == []:
+        if self.target_disease == [] or self.target_disease[0][1] <= 0:
             # if there are no disease found
             response = '完全找不到對應的疾病喔'
             # clear acupoints list
             self.acupoints.clear()
             return response, False
-        elif self.candidate_dis[0][1] <= len(self.symptoms) -2 :
+        elif self.candidate_dis[0][1] <= len(self.symptoms) -1 :
             # last input symptom useless
             response = '資料庫中沒有完全符合這些特徵的疾病。\n不過目前你看起來最像得了'+self.candidate_dis[0][0]
             return response, True
