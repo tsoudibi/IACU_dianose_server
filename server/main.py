@@ -69,7 +69,7 @@ def post2():
     
     # uid, question, target[id], continue
     key = ["uid", "response", "acu_points", "continue"]
-    value = [UID, response, MB.symptoms, cont]
+    value = [UID, response, MB.target_acupoint, cont]
     dic = dict(zip(key, value))
     print(dic)
     return jsonify(dic)
