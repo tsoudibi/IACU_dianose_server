@@ -53,7 +53,6 @@ class Medical_Bot():
                                     self.candidate_dis)
 
         # check stop word
-        # for stop_word in ["不", "沒", "否", "無"]:
         if '沒有症狀了' in input_symptoms_origin:
             # if there are candidate
             if len(self.candidate_dis) > 0:

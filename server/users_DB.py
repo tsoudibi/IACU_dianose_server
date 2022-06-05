@@ -43,15 +43,15 @@ class USERS_DB():
         user['checkpoints']['acupoints'] = []
         user['checkpoints']['candidate_dis'] = []
 
-    def save_response(self,UID,response):
-        user = self.get_user_from_uid(UID)
-        user['respones_logs'].append(response)
-        self.save_json()
+    # def save_response(self,UID,response):
+    #     user = self.get_user_from_uid(UID)
+    #     user['respones_logs'].append(response)
+    #     self.save_json()
     
-    def save_answer(self,UID,answer):
-        user = self.get_user_from_uid(UID)
-        user['answers_logs'].append(answer)
-        self.save_json()
+    # def save_answer(self,UID,answer):
+    #     user = self.get_user_from_uid(UID)
+    #     user['answers_logs'].append(answer)
+    #     self.save_json()
 
     def save_checkpoint(self,UID,symptoms,acupoints,candidate_dis):
         user = self.get_user_from_uid(UID)

@@ -36,7 +36,7 @@ def post():
     dic = dict(zip(key, value))
 
     # save response in JSON
-    UDB.save_response(UID, dic['question'])
+    # UDB.save_response(UID, dic['question'])
     print(dic, jsonify(dic))
     return jsonify(dic)
 
@@ -48,8 +48,7 @@ def post2():
     UID = request.form['uid']
 
     # save answer in JSON
-    # print(request.form["answer"])
-    UDB.save_answer(UID, request.form["answer"])
+    # UDB.save_answer(UID, request.form["answer"])
     
     
     # if cont = true:
@@ -65,7 +64,7 @@ def post2():
     print(response)
 
     # save response in JSON
-    UDB.save_response(UID, response)
+    # UDB.save_response(UID, response)
     
     # uid, question, target[id], continue
     key = ["uid", "response", "acu_points", "continue"]
