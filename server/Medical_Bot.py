@@ -53,7 +53,7 @@ class Medical_Bot():
                 # if there are candidate
                 if len(self.candidate_dis) > 0:
                     # response = '好的，你看起來像有'+self.candidate_dis[0][0]+'\n分數為'+str(round(self.candidate_dis[0][1],3))+'/'+str(len(self.symptoms))
-                    response = '以上症狀和「'+self.candidate_dis[0][0]+'」最匹配\n，推薦按摩的穴道為：'+self.target_acupoint
+                    response = '以上症狀和「'+self.candidate_dis[0][0]+'」最匹配\n，推薦按摩的穴道為：'+self.target_acupoint[0]
                     return response, False
                 else:
                     response = '好的，你真健康'
