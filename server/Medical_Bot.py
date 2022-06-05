@@ -37,9 +37,13 @@ class Medical_Bot():
         self.candidate_dis = self.query_disease(self.symptoms)
         
         # get target disease, that is, the highest score candidate
-        self.target_disease = self.candidate_dis[0][0]
-        # self.target_acupoint = self.DataBase.loc[self.DataBase['disease_name'] == '頭痛']['acupoints'].to_list()[0][0]
-        self.target_acupoint = self.DataBase.loc[self.DataBase['disease_name'] == '頭痛']['acupoints'].to_list()[0]
+        
+        try:
+            self.target_disease = self.candidate_dis[0][0]
+            self.target_acupoint = self.DataBase.loc[self.DataBase['disease_name'] == self.target_disease]['acupoints'].to_list()[0]
+        except:
+            self.target_disease = []
+            self.target_acupoint = []
 
         # save checkpoint
         self.user_DB.save_checkpoint(self.UID,
