@@ -75,7 +75,7 @@ class Medical_Bot():
             return response, False
         elif self.candidate_dis[0][1] <= len(self.symptoms) -2 :
             # last input symptom useless
-            response = '資料庫中沒有完全符合這些特徵的疾病。\n不過目前你看起來最像得了'+self.candidate_dis[0][0]
+            response = '資料庫中沒有完全符合這些特徵的疾病。\n不過你目前的症狀和'+self.candidate_dis[0][0]+'最匹配'
             return response, True
         else:
             # disease found
