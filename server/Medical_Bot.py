@@ -38,7 +38,7 @@ class Medical_Bot():
         
         # get target disease, that is, the highest score candidate
         self.target_disease = self.candidate_dis[0][0]
-        self.target_acupoint = self.DataBase.loc[self.DataBase['disease_name'] == self.candidate_dis[0][0]]['acupoints'][0]
+        self.target_acupoint = self.DataBase.loc[self.DataBase['disease_name'] == '頭痛']['acupoints'].to_list()[0][0]
 
         # save checkpoint
         self.user_DB.save_checkpoint(self.UID,
