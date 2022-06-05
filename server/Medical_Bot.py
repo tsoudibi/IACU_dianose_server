@@ -65,7 +65,7 @@ class Medical_Bot():
         
             
         
-        if len(self.candidate_dis[0]) == 0:
+        if self.target_disease == []:
             # if there are no disease found
             response = '完全找不到對應的疾病喔'
             # clear acupoints list
