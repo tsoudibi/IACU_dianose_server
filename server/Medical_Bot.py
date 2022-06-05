@@ -44,6 +44,7 @@ class Medical_Bot():
         except:
             self.target_disease = []
             self.target_acupoint = []
+        print(self.target_disease,self.target_acupoint)
 
         # save checkpoint
         self.user_DB.save_checkpoint(self.UID,
@@ -66,12 +67,6 @@ class Medical_Bot():
             
         
         if self.target_disease == [] :
-            # if there are no disease found
-            response = '完全找不到對應的疾病喔'
-            # clear acupoints list
-            self.acupoints.clear()
-            return response, False
-        elif self.target_disease[0][1] <= 0:
             # if there are no disease found
             response = '完全找不到對應的疾病喔'
             # clear acupoints list
