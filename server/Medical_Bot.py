@@ -74,7 +74,7 @@ class Medical_Bot():
             # clear acupoints list
             self.acupoints.clear()
             return response, False
-        elif self.candidate_dis[0][1] <= len(self.symptoms) -1 :
+        elif self.candidate_dis[0][1] <= len(self.symptoms) -2 :
             # last input symptom useless
             response = '資料庫中沒有完全符合這些特徵的疾病。\n不過目前你看起來最像得了'+self.candidate_dis[0][0]
             return response, True
