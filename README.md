@@ -7,7 +7,11 @@
 ## requrement
 `pip install requirements.txt`
 
-
+## run server
+```
+cd .\server\
+python .\main.py
+```
 -----------------------
 # Usage
 ## /init/
