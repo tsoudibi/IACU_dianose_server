@@ -118,3 +118,15 @@ response formate:
     "continue": True
 }
 ```
+-----------------------
+# Data creation
+## `disease_to_acu_and_symptom_modify_ZH_faceonly_embedding.csv`
+given file: `data-O.xlsx`, `disease.xlsx`
+1. Use `Merge_excel.py` to merge data from `data-O.xlsx` and `disease.xlsx`, generating `Merge_excel.xlsx`
+2. Use `disease_to_acu_and_symptom.ipynb` to drop unused column, null value and duplicate value, generating `disease_to_acu_and_symptom.csv`
+3. Translate to Taiwanese, `disease_to_acu_and_symptom_ZH.csv`
+4. Use `Data_Preprocessing.ipynb`,and...
+    1. by `disease_target.json`, filtering acupoints to face-only acupoints
+    2. drop the disease that has no symptoms
+    3. useing $BERT$ embedding model, generate enbedding for each disease's symptoms\
+    4. finally, save result as `disease_to_acu_and_symptom_modify_ZH_faceonly_embedding.csv`
