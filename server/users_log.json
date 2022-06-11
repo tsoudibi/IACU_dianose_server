@@ -75,6 +75,184 @@
                 "acupoints": [],
                 "candidate_dis": []
             }
+        },
+        {
+            "UID": "f339d3a3-4139-4f25-8598-9567c4de9ab8",
+            "USER_NAME": "貴賓",
+            "answers_logs": [],
+            "respones_logs": [
+                "哈囉貴賓，你有什麼症狀呢？"
+            ],
+            "checkpoints": {
+                "symptoms": [],
+                "acupoints": [],
+                "candidate_dis": []
+            }
+        },
+        {
+            "UID": "7a2b7f94-8817-4e5a-b5f3-f57a05abd27a",
+            "USER_NAME": "貴賓",
+            "answers_logs": [],
+            "respones_logs": [
+                "哈囉貴賓，你有什麼症狀呢？"
+            ],
+            "checkpoints": {
+                "symptoms": [],
+                "acupoints": [],
+                "candidate_dis": []
+            }
+        },
+        {
+            "UID": "00229432-1521-4ee2-a805-5bc80e9c71b3",
+            "USER_NAME": "老兄",
+            "answers_logs": [],
+            "respones_logs": [
+                "哈囉老兄，你有什麼症狀呢？"
+            ],
+            "checkpoints": {
+                "symptoms": [],
+                "acupoints": [],
+                "candidate_dis": []
+            }
+        },
+        {
+            "UID": "5fd84c51-96a3-4fd7-91b3-56c704daa29b",
+            "USER_NAME": "老兄",
+            "answers_logs": [
+                "我頭痛"
+            ],
+            "respones_logs": [
+                "哈囉老兄，你有什麼症狀呢？"
+            ],
+            "checkpoints": {
+                "symptoms": [
+                    "頭痛"
+                ],
+                "acupoints": [],
+                "candidate_dis": [
+                    [
+                        "頭痛",
+                        1.1952380952375867
+                    ],
+                    [
+                        "青光眼",
+                        1.1761904761899757
+                    ],
+                    [
+                        "上牙痛",
+                        1.1619047619043474
+                    ]
+                ]
+            }
+        },
+        {
+            "UID": "60c7c315-160a-448e-a698-464d467454d6",
+            "USER_NAME": "老兄",
+            "answers_logs": [],
+            "respones_logs": [
+                "哈囉老兄，你有什麼症狀呢？"
+            ],
+            "checkpoints": {
+                "symptoms": [],
+                "acupoints": [],
+                "candidate_dis": []
+            }
+        },
+        {
+            "UID": "e2be0f77-727b-40fd-8189-3ea80f308cdf",
+            "USER_NAME": "老兄",
+            "answers_logs": [],
+            "respones_logs": [
+                "哈囉老兄，你有什麼症狀呢？"
+            ],
+            "checkpoints": {
+                "symptoms": [],
+                "acupoints": [],
+                "candidate_dis": []
+            }
+        },
+        {
+            "UID": "e2ae0229-4bc1-4901-aa19-23e7f63683bf",
+            "USER_NAME": "老兄",
+            "answers_logs": [],
+            "respones_logs": [
+                "哈囉老兄，你有什麼症狀呢？"
+            ],
+            "checkpoints": {
+                "symptoms": [],
+                "acupoints": [],
+                "candidate_dis": []
+            }
+        },
+        {
+            "UID": "ac02f686-c8df-47ab-9977-7a1fdbb57751",
+            "USER_NAME": "老兄",
+            "answers_logs": [],
+            "respones_logs": [
+                "哈囉老兄，你有什麼症狀呢？"
+            ],
+            "checkpoints": {
+                "symptoms": [],
+                "acupoints": [],
+                "candidate_dis": []
+            }
+        },
+        {
+            "UID": "9420b108-653c-4aa5-97fc-ffe223c7f36b",
+            "USER_NAME": "老兄",
+            "answers_logs": [],
+            "respones_logs": [
+                "哈囉老兄，你有什麼症狀呢？"
+            ],
+            "checkpoints": {
+                "symptoms": [],
+                "acupoints": [],
+                "candidate_dis": []
+            }
+        },
+        {
+            "UID": "161fe419-c75b-41e6-b663-6d2f07dcdd70",
+            "USER_NAME": "老兄",
+            "answers_logs": [
+                "我頭痛"
+            ],
+            "respones_logs": [
+                "哈囉老兄，你有什麼症狀呢？",
+                "以上症狀和「頭痛」最匹配\n請提供更多症狀讓我判斷"
+            ],
+            "checkpoints": {
+                "symptoms": [
+                    "頭痛"
+                ],
+                "acupoints": [],
+                "candidate_dis": [
+                    [
+                        "頭痛",
+                        1.1952380952375867
+                    ],
+                    [
+                        "青光眼",
+                        1.1761904761899757
+                    ],
+                    [
+                        "上牙痛",
+                        1.1619047619043474
+                    ]
+                ]
+            }
+        },
+        {
+            "UID": "cdcf0974-19dd-4db1-b759-54fb604561e4",
+            "USER_NAME": "老兄",
+            "answers_logs": [],
+            "respones_logs": [
+                "哈囉老兄，你有什麼症狀呢？"
+            ],
+            "checkpoints": {
+                "symptoms": [],
+                "acupoints": [],
+                "candidate_dis": []
+            }
         }
     ]
 }
