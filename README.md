@@ -121,10 +121,11 @@ response formate:
 -----------------------
 # Data creation
 ## `disease_to_acu_and_symptom_modify_ZH_faceonly_embedding.csv`
-used data file : 
+used data files: 
  - `data-O.xlsx`
  - `disease.xlsx`
  - `disease_target.json`
+
 used processing files:
  - `Merge_excel.py`
  - `disease_to_acu_and_symptom.ipynb`
