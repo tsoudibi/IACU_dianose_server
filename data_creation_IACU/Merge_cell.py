@@ -27,7 +27,7 @@ def Merge_cells(ws,target_list,start_row,col):
                            +col+str(end+start_row))
 
 #讀取文件和遍歷文件的sheet
-wb=load_workbook('D:\成功大學\四下\人工 智慧在中醫上的應用\database\data-O.xlsx')
+wb=load_workbook('data-O.xlsx')
 sheet_names = wb.get_sheet_names()
 print(sheet_names[0])
 
@@ -68,4 +68,4 @@ for sheet_name in sheet_names: #遍历每个工作表，抓取数据，并根据
     print('merging meridian_list done...')
 
 #保存文件    
-wb.save('D:\成功大學\四下\人工 智慧在中醫上的應用\database\\finial_data.xlsx')
+wb.save('finial_data.xlsx')

@@ -8,7 +8,7 @@ Created on Thu Jan  7 12:52:45 2021
 import pandas as pd
 
 #文件路径
-dir='D:\成功大學\四下\人工 智慧在中醫上的應用\database\\'
+dir='./'
 
 #读取资料
 df_sheet1=pd.read_excel(dir+'data-O.xlsx',engine='openpyxl',sheet_name='disease')
@@ -41,4 +41,4 @@ cp_data3=pd.merge(cp_data2,df2,on='disease_name')
 
 #写入到新的excel中
 #cp_data2.to_excel(r'C:/Users/USER/Desktop/data.xlsx',index=False)
-cp_data3.to_excel(r'D:\\成功大學\\四下\\人工 智慧在中醫上的應用\\database\\Merge_excel.xlsx',index=False)
+cp_data3.to_excel(r'Merge_excel.xlsx',index=False)
