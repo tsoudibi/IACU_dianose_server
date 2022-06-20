@@ -1,17 +1,18 @@
 # IACU_dianose_server 
-
+ 
 
 # Installation
 `git clone https://github.com/tsoudibi/IACU_dianose_server.git` 
 
-## requrement
-`pip install requirements.txt`
 
 ## run server
-```
-cd .\server\
-python .\main.py
-```
+How to build the server:
+1. Download Python 3.8.9
+2. use `python -m venv .IACU_venv` to create a virtual environment
+3. `.\.IACU_venv\Scripts\activate` to activate virtual environment
+4. `cd .\server\`
+5. `pip install requirements.txt` to install packages
+6. `python .\main.py ` to run the server <br>
 the server is successfully starting when seeing
 ```
 starting server...
